@@ -1,0 +1,11 @@
+@charset "UTF-8";
+.b1 {
+	background : red;
+	font-family: "dotum";
+	color: white;
+}
+.b2 {
+	background : blue;
+	font-family: "궁서";
+	color: white;
+}
