@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+#data { /* 선택 : 아이디 */
+	border-radius: italic;
+}
+
+body { /* 선택 : 태그 */
+	/* 선택자 : 세가지 => 태그이름 / 클래스:그룹을 지어서(.) / 아이디:하나만 지정(#) */
+	/* 같은 효과 적용하고 싶은 애들을 클래스로 묶어줌 
+    /* html파일에 <td class="클래스명">를 주고 css파일에.클래스명{효과} */
+	/* 하나만 지정할때, 클래스 사용도 OK or id를 사용함  */
+	/* html파일에 <td id="data">를 주고 css파일에 #data */
+	color: blue;
+	font-size: 40px; /* css에서 스타일이 숫자일경우 px를 반드시써줘야함 */
+}
+
+.left { /* 선택: 클래스 */
+	background: yellow;
+	height: 100px;
+	width: 200px;
+	text-align: center;
+}
+
+.right {
+	background: fuchsia;
+	width: 300px;
+}
+
+input { /* 태그 순서는 상관없음 */
+	height: 100px;
+	font-size: 40px;
+}
+
+.button {
+	background: maroon;
+	height: 100px;
+	text-align: center;
+}
+
+button {
+	color: white;
+	background: red;
+	font-weight: bold;
+	font-size: 40px;
+}
+/* style="background : gold; border-radius: 20px 20px 20px 20px;" */
+/* colspan="2" style="text-align: center;" */

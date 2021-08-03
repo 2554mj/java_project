@@ -1,0 +1,55 @@
+@charset "UTF-8";
+a{
+	background: white;
+	text-decoration: none;
+}
+#total{
+	width: 800px;
+	height: 800px;
+	background: lime;
+}
+#top{
+	width: 800px;
+	height: 100px;
+	background: pink;
+}
+#top2{
+	width: 300px;
+	height: 100px;
+	background: brown;
+	color:white;
+	position: fixed;
+	top: 5px;
+	right: 5px;
+	border-radius:5px 30px 10px 50px;
+/*1 2 : 모서리에 번호가있음  */	
+/*4 3  */
+}
+#center{
+	width: 800px;
+	height: 500px;
+	background: url('../img/bear.jpg')/*out.css에서 나가서=>''*/
+	/*out.css의 위치를 기준으로 작성함*/
+}
+
+li{
+	list-style: none;
+	float: left; /*밑으로 떨어지는 모양에서 왼쪽으로 늘어지는 모양으로 변경*/
+	font-size: 25px;
+	background: orange;
+	padding: 10px;/*글자와 글자배경 간의 사방에 여백을 줌, 위치에 따라 각자 줄수있음*/
+	margin: 5px;/* 글자들 사이 간격 자체들이 떨어지게 */	
+}
+li:nth-child(2n+1){/*홀수에만 효과*/
+	background: yellow;
+}
+
+li:hover {/*마우스올렸을때 효과*/
+	list-style: none;
+	float: left; 
+	font-size: 25px;
+	background: pink;
+	padding: 10px;
+	margin: 5px;
+	border-radius:30px;/* 모서리둥글게 */
+}
