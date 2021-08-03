@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>게시판 글쓰기</title>
+</head>
+<body>
+<form action="insert2.jsp">
+제목 : <input name='title'><br>
+글쓴이 : <input name='writer'><br>
+내용 : <textarea rows="30" cols="100" name='word'></textarea><br>
+종류 : 
+<input name=sort type='radio' value='문의사항'>문의사항
+<input name=sort type='radio' value='답변'>답변
+<input name=sort type='radio' value='확인'>확인<br>
+부서 :
+<select name='divi'>
+		<option value="기획부">기획부
+		<option value="총무부">총무부
+		<option value="인사부">인사부
+		</select><br>
+날짜 : <input name='date'>
+<button type='submit'>확인</button>
+</body>
+</html>
