@@ -1,0 +1,12 @@
+@charset "UTF-8";
+body{
+	background: pink; /* 배경색 지정 */
+	color: white; /* 글자색 */
+	
+}
+
+hr{
+	width : 1000px;
+	height : 10px;
+	background: brown;
+}
