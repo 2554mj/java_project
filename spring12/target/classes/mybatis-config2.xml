@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+   <typeAliases>
+      <typeAlias type="com.mega.mvc12.MemberDTO" alias="memberVO"></typeAlias>
+      <typeAlias type="com.mega.mvc12.BbsDTO" alias="bbsVO"></typeAlias>
+      <typeAlias type="com.mega.mvc12.PersonalInformDTO" alias="informVO"></typeAlias>
+   </typeAliases>
+   <mappers>
+      <mapper resource="mapper2/memberMapper.xml" />
+      <mapper resource="mapper2/bbsMapper.xml" />
+      <mapper resource="mapper2/informMapper.xml" />
+   </mappers>
+</configuration>

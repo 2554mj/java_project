@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="bbs">
+	<insert id="add" parameterType="bbsVO">
+	<!-- parameterType=com.mega.mvc12.BbsDTO를 넣어주려니 복잡해! mtbatis-config에 bbsVO란 이름으로 넣어주자! -->
+			insert into BBS values (#{id}, #{title}, #{content}, #{writer})
+	</insert>
+	<select id="all">
+	
+	</select>
+	<select id="one" parameterType="bbsVO" resultType="bbsVO">
+	select * from BBS where writer = #{writer}
+	</select>
+	<delete id="del"></delete>
+	<update id="up"></update>
+</mapper>
