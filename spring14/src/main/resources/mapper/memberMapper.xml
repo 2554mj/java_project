@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="member">
+
+	<insert id="create" parameterType="memberVO">
+		insert into MEMBER values('my3','my3','my3','my3')
+	</insert>
+	
+	<select id="all" resultType="memberVO">
+		select * from MEMBER 
+	</select>
+	<!-- select할때는 반드시 orm넣어줘야함, parameter=입력값, result=db처리후 결과값 -->
+	
+	<select id="one" parameterType="memberVO" resultType="memberVO">
+		select * from MEMBER where id = #{id}
+	</select>
+	
+	<delete id="delete" parameterType="memberVO">
+		 delete from MEMBER where id = #{id}
+	</delete>
+	
+	<update id="up"></update>
+	
+</mapper>
